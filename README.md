@@ -60,6 +60,8 @@ RETRIEVAL_ASSISTANT_ID=your_retrieval_assistant_id
 ANALYSIS_ASSISTANT_ID=your_analysis_assistant_id
 ```
 
+**Note:** You do not need to add your Confluence API token to the `.env` file. You will provide this information directly through the application's configuration interface when you first run it.
+
 ### 5. Set Up OpenAI Assistants
 
 You need to create two OpenAI Assistants:
