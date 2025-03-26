@@ -20,8 +20,9 @@ Once logged in:
 
 1. Click the "Create API token" button
 2. Enter a meaningful label for your token (e.g., "Confluence Knowledge Chatbot")
-3. Click "Create"
-4. A new token will be generated and displayed on your screen
+3. Select an expiration date for your token
+4. Click "Create"
+5. A new token will be generated and displayed on your screen
 
 ### 4. Copy and Store Your Token Securely
 
@@ -53,8 +54,10 @@ When you run the application, you'll be prompted to enter your Confluence creden
 
 ### Token Expiration
 
-- Atlassian API tokens do not expire by default
+- When creating your Confluence API token, you will be required to select an expiration date
+- Make note of this expiration date as your token will stop working after that time
 - You can manually revoke a token at any time by returning to the API tokens page and clicking "Revoke"
+- Plan to create a new token before the expiration date to ensure uninterrupted access
 
 ### Troubleshooting
 
