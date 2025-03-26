@@ -34,22 +34,6 @@ You can install dependencies directly:
 pip install -r requirements.txt
 ```
 
-**Note:** While not required, using a virtual environment is recommended for avoiding dependency conflicts:
-
-```bash
-# Optional: Create and activate virtual environment
-python -m venv venv
-
-# Windows
-venv\Scripts\activate
-
-# macOS/Linux
-source venv/bin/activate
-
-# Then install dependencies
-pip install -r requirements.txt
-```
-
 ### 3. Create a `.env` File
 
 Create a `.env` file in the project root directory with the following environment variables:
