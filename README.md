@@ -26,31 +26,31 @@ git clone https://github.com/yourusername/confluence-knowledge-chatbot.git
 cd confluence-knowledge-chatbot
 ```
 
-### 2. Create Virtual Environment
+### 2. Install Dependencies
 
-```bash
-python -m venv venv
-```
-
-Activate the virtual environment:
-
-**Windows**:
-```bash
-venv\Scripts\activate
-```
-
-**macOS/Linux**:
-```bash
-source venv/bin/activate
-```
-
-### 3. Install Dependencies
+You can install dependencies directly:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4. Create a `.env` File
+**Note:** While not required, using a virtual environment is recommended for avoiding dependency conflicts:
+
+```bash
+# Optional: Create and activate virtual environment
+python -m venv venv
+
+# Windows
+venv\Scripts\activate
+
+# macOS/Linux
+source venv/bin/activate
+
+# Then install dependencies
+pip install -r requirements.txt
+```
+
+### 3. Create a `.env` File
 
 Create a `.env` file in the project root directory with the following environment variables:
 
@@ -62,7 +62,7 @@ ANALYSIS_ASSISTANT_ID=your_analysis_assistant_id
 
 **Note:** You do not need to add your Confluence API token to the `.env` file. You will provide this information directly through the application's configuration interface when you first run it.
 
-### 5. Set Up OpenAI Assistants
+### 4. Set Up OpenAI Assistants
 
 You need to create two OpenAI Assistants:
 
@@ -71,7 +71,7 @@ You need to create two OpenAI Assistants:
 
 Create these assistants through the [OpenAI platform](https://platform.openai.com/assistants) and add their IDs to your `.env` file.
 
-### 6. Get Confluence API Token
+### 5. Get Confluence API Token
 
 1. Log in to your Atlassian account at [id.atlassian.com](https://id.atlassian.com/)
 2. Navigate to Security > API tokens
@@ -80,7 +80,7 @@ Create these assistants through the [OpenAI platform](https://platform.openai.co
 5. Click "Create"
 6. Copy the generated token and keep it secure
 
-### 7. Run the Application
+### 6. Run the Application
 
 ```bash
 streamlit run confluence_chat_bot.py
