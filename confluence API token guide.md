@@ -46,19 +46,6 @@ When you run the application, you'll be prompted to enter your Confluence creden
 - The API token inherits the permissions of your Atlassian account
 - Make sure your account has appropriate read access to the Confluence spaces you want to index
 
-### Token Security
-
-- Treat your API token like a password
-- If you suspect your token has been compromised, delete it immediately and create a new one
-- Consider using a token with limited permissions when possible
-
-### Token Expiration
-
-- When creating your Confluence API token, you will be required to select an expiration date
-- Make note of this expiration date as your token will stop working after that time
-- You can manually revoke a token at any time by returning to the API tokens page and clicking "Revoke"
-- Plan to create a new token before the expiration date to ensure uninterrupted access
-
 ### Troubleshooting
 
 If you encounter authentication issues:
@@ -67,14 +54,6 @@ If you encounter authentication issues:
 2. Ensure your username is the email address associated with your Atlassian account
 3. Check that your account has the necessary permissions for the spaces you're trying to access
 4. Try creating a new API token if problems persist
-
-## For Confluence Server/Data Center
-
-If you're using Confluence Server or Data Center (self-hosted), the process is different:
-
-1. Basic authentication (username/password) may be required instead of API tokens
-2. Personal Access Tokens (PATs) may be available depending on your Confluence version
-3. Consult your Confluence administrator for the appropriate authentication method
 
 ## Next Steps
 
