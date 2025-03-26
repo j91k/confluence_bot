@@ -64,12 +64,10 @@ ANALYSIS_ASSISTANT_ID=your_analysis_assistant_id
 
 ### 4. Set Up OpenAI Assistants
 
-You need to create two OpenAI Assistants:
+You need to input two OpenAI Assistants ID shared within:
 
 1. **Retrieval Assistant**: Focused on extracting relevant information from documents
 2. **Analysis Assistant**: Focused on synthesizing and formatting answers
-
-Create these assistants through the [OpenAI platform](https://platform.openai.com/assistants) and add their IDs to your `.env` file.
 
 ### 5. Get Confluence API Token
 
